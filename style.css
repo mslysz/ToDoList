@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+html,
+li {
+  font-family: "Exo", sans-serif;
+}
+
+body {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.wrap {
+  margin-top: 20px;
+  height: 100vh;
+}
+.text-center {
+  text-align: center;
+}
+h2 {
+  font-size: 18px;
+}
+.containerToDo,
+.containerTaskFinder {
+  background-color: rgb(242, 253, 253);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  line-height: 2.5;
+}
+
+.containerTaskFinder {
+  border-top: 1px solid lightgrey;
+  padding-bottom: 30px;
+}
+input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-color: rgba(119, 136, 153, 0.071);
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 22px;
+  font-weight: 400;
+  background-color: rgba(135, 206, 250, 0.101);
+  padding-left: 10px;
+  margin-bottom: 10px;
+  word-break: break-all;
+}
+.addBtn {
+  background-color: rgba(144, 238, 144, 0.386);
+  border: none;
+  padding: 13px 15px;
+  cursor: pointer;
+  font-weight: 400;
+  margin-left: 10px;
+}
+.addBtn:hover {
+  background-color: rgba(75, 201, 75, 0.564);
+}
+.task button {
+  height: 60px;
+  width: 70px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(240, 128, 128, 0.516);
+}
+.task button:hover {
+  background-color: rgba(221, 37, 37, 0.74);
+}
+
+@media screen and (max-width: 320px) {
+  .wrap {
+    margin-top: 0;
+    width: 100vw;
+  }
+  .containerToDo,
+  .containerTaskFinder {
+    padding: 20px;
+    line-height: 2.5;
+  }
+
+  .containerTaskFinder {
+    padding-bottom: 30px;
+    height: 55vh;
+  }
+  input {
+    width: 280px;
+  }
+  .task {
+    word-break: break-all;
+  }
+  .addBtn {
+    width: 100%;
+    margin: 0;
+  }
+}

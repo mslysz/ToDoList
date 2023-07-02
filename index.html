@@ -4,18 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDoList Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>To-do-list</h1>
-    <form action="">
-      <input type="text" />
-      <button>Add New Task</button>
-      <h2>Number of tasks: <span>0</span></h2>
-    </form>
-    <ul></ul>
-    <h2>To-Do Task Finder</h2>
-    <p>Type what task you are looking for in the list:</p>
-    <input id="secondInput" type="text" />
+    <div class="wrap">
+      <div class="containerToDo">
+        <h1 class="text-center">To-do-list</h1>
+        <form action="">
+          <input type="text" size="50" placeholder="Write a task here..." />
+          <button class="addBtn">Add New Task</button>
+          <h2>Number of tasks: <span>0</span></h2>
+        </form>
+        <ul></ul>
+      </div>
+      <div class="containerTaskFinder">
+        <h2 class="text-center">To-Do Task Finder</h2>
+        <p>Type what task you are looking for:</p>
+        <input
+          id="secondInput"
+          type="text"
+          placeholder="Search for the task here..."
+        />
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>

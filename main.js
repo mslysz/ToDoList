@@ -30,11 +30,11 @@ const searchTask = (e) => {
   const searchText = e.target.value.toLowerCase();
   let tasks = [...tasksList];
   if (searchText === "") {
-    tasks.forEach(task => task.style.display = 'block');
+    tasks.forEach(task => task.style.display = 'flex');
   } else {
     tasks.forEach(task => {
       if (task.textContent.toLowerCase().includes(searchText)) {
-        task.style.display = "block";
+        task.style.display = "flex";
       } else {
         task.style.display = "none"
       }
